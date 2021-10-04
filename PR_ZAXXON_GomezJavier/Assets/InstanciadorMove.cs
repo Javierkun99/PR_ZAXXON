@@ -23,11 +23,12 @@ public class InstanciadorMove : MonoBehaviour
     {
         while (true)
         {
-            print("Hola");
-
+            float randomX = Random.Range(-12f, 12f);
+            Vector3 newPos = new Vector3(randomX, instatiatePosition.position.y, instatiatePosition.position.z);
             Instantiate(columna);
-
             yield return new WaitForSeconds(intervalo);
+           
         }
     }
+
 }
