@@ -12,7 +12,9 @@ public class InstanciadorMove : MonoBehaviour
     void Start()
     {
 
-        intervalo = 1f;
+        intervalo = 0.8f;
+        StartCoroutine("CrearColumna");
+        StartCoroutine("CrearColumna");
         StartCoroutine("CrearColumna");
         StartCoroutine("CrearColumna");
         StartCoroutine("CrearColumna");

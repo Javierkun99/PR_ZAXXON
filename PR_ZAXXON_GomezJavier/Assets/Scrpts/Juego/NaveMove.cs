@@ -35,6 +35,7 @@ public class NaveMove : MonoBehaviour
 
         float posX = transform.position.x;
         float posY = transform.position.y;
+        float posR = transform.position.z;
 
         if ((posX < limiteH || desplX < 0f) && (posX > -limiteH || desplX > 0f))
         {
@@ -45,7 +46,8 @@ public class NaveMove : MonoBehaviour
         {
             transform.Translate(Vector3.up * Time.deltaTime * desplSpeed * desplY, Space.World);
         }
-        // transform.Rotate(0f, 0f, desplR * Time.deltaTime * -rotationSpeed);
+         transform.Rotate(0f, 0f, desplR * Time.deltaTime * -rotationSpeed);
+     
 
 
 
