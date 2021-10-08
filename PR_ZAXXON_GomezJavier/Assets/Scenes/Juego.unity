@@ -248,7 +248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ff7076ed86f704f8cc3231f70f36c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columna: {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
+  obstaculos:
+  - {fileID: 924337312569922822, guid: fc00877a34c02a9408ea422a30477a41, type: 3}
+  - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
   instatiatePosition: {fileID: 53956647}
 --- !u!4 &53956647
 Transform:

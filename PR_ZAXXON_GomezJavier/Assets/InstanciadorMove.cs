@@ -5,22 +5,21 @@ using UnityEngine;
 public class InstanciadorMove : MonoBehaviour
 {
     float intervalo;
-    [SerializeField] GameObject columna;
-    [SerializeField] Transform instatiatePosition;
- 
+    [SerializeField] GameObject[] obstaculos;
+    [SerializeField] 
+    InitGame initGame;
+    int columna =6;
+
     // Start is called before the first frame update
     void Start()
     {
-
-        intervalo = 0.8f;
+        initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
+        intervalo = 4;
         StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
-        StartCoroutine("CrearColumna");
+        
+        for (int n = 0; n < columna; n++) ;
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -29,14 +28,39 @@ public class InstanciadorMove : MonoBehaviour
     }
     IEnumerator CrearColumna()
     {
+        float speed;
         while (true)
         {
+            speed = initGame.spaceshipSpeed;
+            print(intervalo);
+          
             float randomX = Random.Range(-12f, 12f);
-            Vector3 newPos = new Vector3(randomX, instatiatePosition.position.y, instatiatePosition.position.z);
-            Instantiate(columna,newPos,Quaternion.identity);
-            yield return new WaitForSeconds(intervalo);
-           
-        }
-    }
+            Vector3 newPos = new Vector3(randomX, transform.position.y,transform.position.z);
 
+            //Genero número aleatorio para elegir obstaculo
+            int numAl = Random.Range(0, obstaculos.Length);
+            Instantiate(obstaculos[numAl], newPos, Quaternion.identity);
+
+
+            /*
+            if(numAl == 0)
+
+            {
+
+            //Instantiate(columna, newPos, Quaternion.identity);
+
+            }
+            else
+            {
+               //Instantiate(pared, newPos, Quaternion.identity);
+            }
+
+            */
+
+            yield return new WaitForSeconds(intervalo);
+
+        }
+
+       
+    }
 }
