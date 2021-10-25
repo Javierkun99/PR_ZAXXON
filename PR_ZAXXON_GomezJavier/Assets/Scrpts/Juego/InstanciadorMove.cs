@@ -42,20 +42,7 @@ public class InstanciadorMove : MonoBehaviour
             Instantiate(obstaculos[numAl], newPos, Quaternion.identity);
 
 
-            /*
-            if(numAl == 0)
-
-            {
-
-            //Instantiate(columna, newPos, Quaternion.identity);
-
-            }
-            else
-            {
-               //Instantiate(pared, newPos, Quaternion.identity);
-            }
-
-            */
+          
 
             yield return new WaitForSeconds(intervalo);
 
@@ -63,4 +50,5 @@ public class InstanciadorMove : MonoBehaviour
 
        
     }
+
 }

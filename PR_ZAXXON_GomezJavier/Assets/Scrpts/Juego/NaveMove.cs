@@ -9,12 +9,17 @@ public class NaveMove : MonoBehaviour
     float limiteH = 18f;
     float limiteV = 10f;
     float limiteSuelo = 1f;
+
+    InitGame InitGame;
     // Start is called before the first frame update
     void Start()
     {
         //Asigno el valor de las variables de mvimiento
         desplSpeed = 20f;
         rotationSpeed = 100f;
+
+        InitGame = GameObject.Find("InitGame").GetComponent<InitGame>();
+
     }
 
     // Update is called once per frame
@@ -55,5 +60,18 @@ public class NaveMove : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        print("He chocado con" + other.gameObject.tag);
+        if(other.gameObject.layer == 6)
+
+        {
+            InitGame.spaceshipSpeed = 0f;
+            GameObject.Find("Cuerpo").GetComponentInChildren<Renderer>().enabled = false;
+            GameObject.Find("Motores").GetComponentInChildren<Renderer>().enabled = false;
+            GameObject.Find("Motores").GetComponentInChildren<Renderer>().enabled = false;
+            InitGame.alive = false;
+        }
+    }
 
 }
