@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: f816b32a4c500b94f96180214936f902
+  - enabled: 1
+    path: Assets/Scenes/Ajustes.unity
+    guid: 94cd3ff46814a2d42a26b6e21ae4c029
+  - enabled: 1
+    path: Assets/Scenes/Clasificacion.unity
+    guid: 9998aca518a18404ab4e60b5d75b178a
   m_configObjects: {}
