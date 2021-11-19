@@ -153,11 +153,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaculos:
-  - {fileID: 5809162290490515748, guid: 5464d56245d98154f9b59c92d6d1df72, type: 3}
+  - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
   - {fileID: 5809162290490515748, guid: 5464d56245d98154f9b59c92d6d1df72, type: 3}
   - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
   - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
-  - {fileID: 5809162290490515748, guid: 5464d56245d98154f9b59c92d6d1df72, type: 3}
+  - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
   - {fileID: 5809162290490515748, guid: 5464d56245d98154f9b59c92d6d1df72, type: 3}
   - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
   - {fileID: 1224119232097065009, guid: 23982c4345e587a4f8f3f87e57331e10, type: 3}
@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 748450576}
   - component: {fileID: 748450577}
   - component: {fileID: 748450578}
+  - component: {fileID: 748450579}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -1252,6 +1253,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.47, y: 0.6, z: 1.86}
   m_Center: {x: 0.41, y: 0.43, z: 0.21}
+--- !u!114 &748450579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748450574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce2eca7b49d21c4cb7d03838c21f9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &846518460
 GameObject:
   m_ObjectHideFlags: 0

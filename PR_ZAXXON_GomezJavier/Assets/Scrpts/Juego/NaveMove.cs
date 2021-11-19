@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NaveMove : MonoBehaviour
 {
@@ -68,10 +69,15 @@ public class NaveMove : MonoBehaviour
         {
             InitGame.spaceshipSpeed = 0f;
             GameObject.Find("Cuerpo").GetComponentInChildren<Renderer>().enabled = false;
-            GameObject.Find("Motores").GetComponentInChildren<Renderer>().enabled = false;
-            GameObject.Find("Motores").GetComponentInChildren<Renderer>().enabled = false;
+            GameObject.Find("Alas").GetComponentInChildren<Renderer>().enabled = false;
+            GameObject.Find("ert").GetComponentInChildren<Renderer>().enabled = false;
             InitGame.alive = false;
+            Invoke("GameOver", 1f);
         }
+    }
+    public void GameOver()
+    {
+        SceneManager.LoadScene(5);
     }
 
 }

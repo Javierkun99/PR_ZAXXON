@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Clasificacion.unity
     guid: 9998aca518a18404ab4e60b5d75b178a
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: e821c396c99ece345b962b700c5ed7dc
   m_configObjects: {}
