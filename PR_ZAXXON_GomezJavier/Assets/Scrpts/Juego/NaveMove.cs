@@ -62,7 +62,7 @@ public class NaveMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("He chocado con" + other.gameObject.tag);
+        print("He chocado con" + other.gameObject.layer);
         if(other.gameObject.layer == 6)
 
         {

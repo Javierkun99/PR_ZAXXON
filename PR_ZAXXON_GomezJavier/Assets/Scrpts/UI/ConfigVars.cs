@@ -18,12 +18,13 @@ public class ConfigVars : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         musicVolume += 1;
         print(musicVolume);
 
         if (Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene(0);
-        }
+        }*/
     }
 }
