@@ -12,6 +12,11 @@ public class NaveMove : MonoBehaviour
     float limiteSuelo = 1f;
 
     InitGame InitGame;
+
+    AudioSource AudioSource;
+   [SerializeField] AudioClip motor;
+        
+
     // Start is called before the first frame update
     void Start()
     {
