@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ffc647802d65a5c408d2e7f6831b9a89
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DS Bradley
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0c36b2037c9ed034d840e0eeb7d34452, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
