@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 9a2db4fca099b3b40b5c2222a683b6cc
+guid: eeb82cd896201134f8d14f639d524c3f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7099251487099088143
+    second: "\u2014Pngtree\u2014button  button colorful _3911001_0"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,11 +116,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014button  button colorful _3911001_0"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 59
+        width: 707
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f29b4cc2646a7d90800000000000000
+      internalID: -7099251487099088143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c6136f503eb8c1f44b39cff1d82bf807
     internalID: 0
     vertices: []
     indices: 

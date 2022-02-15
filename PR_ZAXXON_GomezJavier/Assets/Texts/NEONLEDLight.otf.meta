@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3a3791caf2e2c14b99bb2af18bcfa16
+guid: 14b82168a88ca4a4eae66f04171cc9a9
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - DS CaslonGotisch
+  - NEON LED Light
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

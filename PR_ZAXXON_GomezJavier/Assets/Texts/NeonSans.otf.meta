@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e4a9b41040cc9541abd80095ee5e28e
+guid: c319124f299e6fb44ada38662e5a0621
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - BBBixxxel
+  - Neon Sans
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
