@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Clasificación : MonoBehaviour
+public class clasificacion_open : MonoBehaviour
 {
-  
-    public void Clasi()
+    public void clasificacion()
     {
         SceneManager.LoadScene(4);
     }

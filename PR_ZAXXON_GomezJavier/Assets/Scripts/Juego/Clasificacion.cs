@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Clasificacion : MonoBehaviour
 {
-    public float score;
+    public static float score;
     [SerializeField] Text scoreText;
 
     private void Update()
@@ -13,5 +13,5 @@ public class Clasificacion : MonoBehaviour
         score += 1 * Time.deltaTime;
         scoreText.text = "Score:" + Mathf.Round(score);
     }
-
+    
 }
