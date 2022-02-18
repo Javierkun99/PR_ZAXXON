@@ -22,6 +22,8 @@ public class InstanciadorTerrenos : MonoBehaviour
 
    public void CrearTerrenos()
     {
-        //Instantiate;
+        print("Crear Terreno");
+        Vector3 pos = new Vector3(0f, 0f, 190f);
+        Instantiate(terrenosPrefab, pos, Quaternion.identity);
     }
 }

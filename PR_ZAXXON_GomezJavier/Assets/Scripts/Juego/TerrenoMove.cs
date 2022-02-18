@@ -12,6 +12,7 @@ public class TerrenoMove : MonoBehaviour
     void Start()
     {
         initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
+        instanciadorTerrenos = GameObject.Find("InstanciadorTerreno").GetComponent<InstanciadorTerrenos>();
 
     }
 
@@ -24,7 +25,7 @@ public class TerrenoMove : MonoBehaviour
         float posZ = transform.position.z;
         if(posZ <= -50)
         {
-            instanciadorTerrenos.SendMessage("CrearTerreno");
+            instanciadorTerrenos.SendMessage("CrearTerrenos");
             Destroy(gameObject);
         }
     }
