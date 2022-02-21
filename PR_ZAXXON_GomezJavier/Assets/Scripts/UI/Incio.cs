@@ -7,6 +7,6 @@ public class Incio : MonoBehaviour
 {
    public void Inicio()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
