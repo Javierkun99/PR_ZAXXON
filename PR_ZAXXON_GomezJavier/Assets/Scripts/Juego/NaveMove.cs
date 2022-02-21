@@ -14,9 +14,12 @@ public class NaveMove : MonoBehaviour
     InitGame InitGame;
 
     AudioSource AudioSource;
-    [SerializeField] AudioClip explosion;
     [SerializeField] AudioClip motor;
-        
+
+
+    [SerializeField] Transform navePos;
+    [SerializeField] GameObject Explosion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -78,8 +81,9 @@ public class NaveMove : MonoBehaviour
             GameObject.Find("Alas").GetComponentInChildren<Renderer>().enabled = false;
             GameObject.Find("ert").GetComponentInChildren<Renderer>().enabled = false;
             InitGame.alive = false;
-            //Instantiate(Explosion.transform.position("Nave"));
-            Invoke("GameOver", 1f);
+            Instantiate(Explosion, navePos.position, Quaternion.identity);
+            Invoke("GameOver", 2f);
+
 
 
         }
